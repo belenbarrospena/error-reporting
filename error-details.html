@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" type='text/css'>
+        <link rel="stylesheet" href="css/custom.css" type='text/css'>
+        <link rel="stylesheet" href="css/bootstrap-responsive.min.css" type='text/css'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body>
+    	<div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+            	<div class="container-fluid">
+            		<a class="brand logo" href="index.html"><img src="img/logo.png" /></a>
+					<a class="brand" href="index.html">Error reports</a>
+					<div class="dropdown pull-right">
+    					<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+    						<i class="icon-user"></i>
+    						Username
+    						<b class="caret pull-right"></b>
+    					</a>
+    					<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+    						<li><a tabindex="-1" href="#">Change password</a></li>
+    						<li><a tabindex="-1" href="#">Logout</a></li>
+    					</ul>
+    				</div>
+    				<b class="divider-vertical pull-right"></b>
+					<form class="navbar-search pull-right">
+						<div class="input-append">
+   		 					<input type="text" class="span5" placeholder="Search all errors">
+   		 					<button type="submit" class="btn btn-info">Search</button>
+   		 				</div>
+    				</form>
+    			</div>
+            </div>
+        </div>
+        <div class="row-fluid">
+        	<div class="page-header">
+        		<a class="btn pull-left" style="margin-top:7px;" href="search-results.html">
+        			<i class="icon-arrow-left"></i>
+        		</a>
+    			<h1 style="margin-left:60px;">do_fetch quilt-native_0.60-r0</h1>
+    		</div>
+			<pre>
+<code>DEBUG: Executing python function do_fetch</code>
+<code>DEBUG: Executing python function base_do_fetch</code>
+<code>DEBUG: Searching for install.patch in paths:</code>
+<code>DEBUG: Executing python function do_fetch</code>	
+<code>DEBUG: Executing python function base_do_fetch</code>
+<code>DEBUG: Searching for install.patch in paths:</code>
+<code>DEBUG: Executing python function do_fetch</code>
+<code>DEBUG: Executing python function base_do_fetch</code></pre>
+			<br />
+			<h2>Error details</h2>
+			<dl class="dl-vertical">
+				<dt>Task:</dt>
+				<dd>do_fetch</dd>
+				<dt>Recipe:</dt>
+				<dd>quilt-native-0.60-r0</dd>
+				<dt>Machine:</dt>
+				<dd>qemux86</dd>
+				<dt>Distro:</dt>
+				<dd>poky</dd>
+				<dt>Build system:</dt>
+				<dd>x86_64-linux</dd>
+				<dt>Target system:</dt>
+				<dd>i586-poky-linux</dd>
+				<dt>Host distro:</dt>
+				<dd>Fedora-17</dd>
+				<dt>Branch:</dt>
+				<dd>andreeap/report-poky</dd>
+				<dt>Commit:</dt>
+				<dd>33eb17b7cbc2ddb2ae03060a8b687a77666c4d506</dd>
+				<dt>Submitter:</dt>
+				<dd>belen</dd>			
+			</dl>
+			<button class="btn btn-large btn-primary" type="button">Email submitter</button>
+    	</div>
+        <script src="js/jquery.js" type='text/javascript'></script>
+        <script src="js/bootstrap.min.js" type='text/javascript'></script>
+        <script src="js/holder.js"></script>
+        <script>
+        	$(document).ready(function() {	
+        		$('.commit > div').popover({placement:'left'})
+        	});
+        </script>
+    </body>
